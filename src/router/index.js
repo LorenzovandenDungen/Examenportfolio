@@ -7,11 +7,14 @@ const routes = [
     name: 'home',
     component: HomeView
   }
-  // Verwijder of commentaar uit de PackageSelectionView route als deze niet gebruikt wordt
+  // Voeg andere routes hier toe indien nodig
 ]
 
+// Gebruik import.meta.env.BASE_URL voor Vite projecten
+const routerHistory = createWebHistory(import.meta.env.BASE_URL)
+
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: routerHistory,
   routes
 })
 
