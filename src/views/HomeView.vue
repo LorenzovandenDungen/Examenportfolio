@@ -1,10 +1,22 @@
+<template>
+  <div>
+    <GlobalHeader />
+    <section class="welcome-section">
+      <!-- Replace with actual content -->
+      <h1>Welcome to our Website!</h1>
+    </section>
+    <!-- Your existing package selection component -->
+    <PackageSelection />
+  </div>
+</template>
+
 <script setup>
-import PackageSelection from '../components/PackageSelection.vue' // Importeer PackageSelection
+import GlobalHeader from '../components/GlobalHeader.vue'
+import PackageSelection from '../components/PackageSelection.vue'
 </script>
 
-<template>
-  <main>
-    <PackageSelection />
-    <!-- Voeg PackageSelection toe aan uw template -->
-  </main>
-</template>
+<style scoped>
+.welcome-section {
+  /* Styles for your welcome section */
+}
+</style>
