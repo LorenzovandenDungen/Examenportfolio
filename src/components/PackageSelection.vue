@@ -2,11 +2,11 @@
   <div class="package-selection">
     <h1>Kies uw Websitepakket</h1>
     <div class="packages">
-      <div class="package" v-for="package in packages" :key="package.id">
-        <h2>{{ package.name }}</h2>
-        <p>{{ package.description }}</p>
-        <p><strong>Prijs: </strong>{{ package.price }}</p>
-        <button @click="selectPackage(package)">Selecteer</button>
+      <div class="package" v-for="pkg in packages" :key="pkg.id">
+        <h2>{{ pkg.name }}</h2>
+        <p>{{ pkg.description }}</p>
+        <p><strong>Prijs: </strong>{{ pkg.price }}</p>
+        <button @click="selectPackage(pkg)">Selecteer</button>
       </div>
     </div>
   </div>
@@ -39,9 +39,9 @@ export default {
     }
   },
   methods: {
-    selectPackage(package) {
+    selectPackage(pkg) {
       // Logica voor pakketselectie hier
-      alert(`Pakket ${package.name} geselecteerd!`)
+      alert(`Pakket ${pkg.name} geselecteerd!`)
     }
   }
 }

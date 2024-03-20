@@ -1,19 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import PackageSelectionView from '../views/PackageSelectionView.vue' // Importeer uw nieuwe view
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
-  },
-  {
-    path: '/packages',
-    name: 'packages',
-    component: PackageSelectionView // Voeg een nieuwe route toe
   }
-  // Voeg meer routes toe indien nodig
+  // Verwijder of commentaar uit de PackageSelectionView route als deze niet gebruikt wordt
 ]
 
 const router = createRouter({
