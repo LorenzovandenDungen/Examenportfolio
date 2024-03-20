@@ -1,20 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import TarievenView from '../views/TarievenView.vue'
+import OfferteView from '../views/OfferteView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  }
-  // Voeg andere routes hier toe indien nodig
+  { path: '/', name: 'home', component: HomeView },
+  { path: '/tarieven', name: 'tarieven', component: TarievenView },
+  { path: '/offerte', name: 'offerte', component: OfferteView },
+  { path: '/contact', name: 'contact', component: ContactView }
+  // Add other routes here if necessary
 ]
 
-// Gebruik import.meta.env.BASE_URL voor Vite projecten
-const routerHistory = createWebHistory(import.meta.env.BASE_URL)
-
 const router = createRouter({
-  history: routerHistory,
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 })
 
