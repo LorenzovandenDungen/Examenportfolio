@@ -15,7 +15,10 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.
       </p>
-      <button @click="goToContact">Contact</button>
+      <!-- Updated button styling and position -->
+      <div class="button-container">
+        <button @click="goToContact">Contact</button>
+      </div>
     </section>
     <footer>
       <p>Footer</p>
@@ -46,7 +49,7 @@ nav .nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid black; /* Adds a bottom border to the nav bar */
+  border-bottom: 1px solid black;
 }
 
 nav .nav-list li {
@@ -58,17 +61,17 @@ nav .nav-list li {
 nav .nav-list li a {
   display: block;
   text-decoration: none;
-  color: black; /* Sets the text color to black */
+  color: black;
 }
 
 nav .nav-list li a.active {
-  background-color: #e7e7e7; /* Active item background color */
-  border-radius: 5px; /* Rounded corners for the active link */
+  background-color: #e7e7e7;
+  border-radius: 5px;
 }
 
 .main-content {
   flex: 1;
-  text-align: center;
+  text-align: center; /* Centered text for the heading and paragraph */
   padding: 20px;
 }
 
@@ -76,21 +79,26 @@ nav .nav-list li a.active {
   margin-bottom: 20px;
 }
 
+.button-container {
+  text-align: center; /* Centering the button within its container */
+}
+
 .main-content button {
-  padding: 1.5rem 3rem; /* Increase padding to make the button larger */
-  font-size: 1.25em; /* Increase font size */
-  border: 3px solid black; /* Make border thicker */
+  padding: 1rem 2rem; /* Larger padding for a bigger button */
+  font-size: 1.25em; /* Increased font size for visibility */
+  border: 3px solid black; /* Thicker border as seen in the image */
   cursor: pointer;
-  background-color: white; /* Set button background to white */
-  margin-top: 20px; /* Add space above the button */
+  background-color: white;
+  margin-top: 20px; /* Added margin to the top for spacing */
+  display: inline-block; /* To apply text-align center from its container */
 }
 
 .main-content button:hover {
-  background-color: #f8f8f8; /* Change background on hover */
+  background-color: #f8f8f8; /* Slight background color change on hover */
 }
 
 footer {
-  border-top: 1px solid black; /* Footer border */
+  border-top: 1px solid black;
   text-align: center;
   padding: 10px 0;
 }
