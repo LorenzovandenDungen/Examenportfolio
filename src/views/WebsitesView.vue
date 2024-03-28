@@ -70,7 +70,7 @@ nav .nav-list li a.active {
 }
 
 .main-content {
-  flex: 1;
+  flex: 2;
   text-align: center; /* Centered text for the heading and paragraph */
   padding: 20px;
 }
